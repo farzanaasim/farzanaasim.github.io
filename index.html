@@ -133,6 +133,49 @@
       color: #1f3a4d;
     }
 
+    #contact form {
+    max-width: 650px;
+    margin-top: 25px;
+}
+
+#contact label {
+    display: block;
+    margin: 18px 0 7px;
+    font-weight: 600;
+    color: #1f3a4d;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact button {
+    margin-top: 18px;
+    padding: 12px 24px;
+    background: #1f3a4d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    opacity: 0.9;
+}
+
     footer {
       text-align: center;
       padding: 35px 20px;
@@ -267,11 +310,28 @@
 </section>
   
 <section class="section" id="contact">
-  <h2>Contact</h2>
+    <h2>Contact</h2>
 
-  <p>
-    Contact information and professional links will be added here.
-  </p>
+    <p>
+        I’d be happy to hear from you. If you would like to get in touch
+        about my writing, research, or a possible collaboration, send me
+        a message below.
+    </p>
+
+    <form action="https://formspree.io/f/mkjnelpp" method="POST">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
 </section>
 
 <footer>
