@@ -52,6 +52,24 @@
       padding: 100px 8%;
     }
 
+    .hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
     .hero h1 {
       font-size: 52px;
       line-height: 1.15;
@@ -156,6 +174,8 @@
 </header>
 
 <section class="hero">
+  <div class="hero-content">
+<div class="hero-text">
   <h1>Dr. Farzana Asim</h1>
 
   <div class="subtitle">
@@ -177,6 +197,11 @@
 </div>
 
   <a class="button" href="#research">Explore My Work</a>
+  </div>
+
+<img src="Farzana-Asim.jpg" alt="Dr. Farzana Asim" class="hero-photo">
+
+</div>
 </section>
 
 <section class="section" id="about">
