@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Farzana Asim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -51,35 +52,45 @@
       color: #1f3a4d;
     }
 
-    .hero {
-      max-width: 1100px;
-      margin: auto;
-      padding: 65px 8%;
-    }
+.hero {
+  width: 100%;
+  background: #1c1c1c;
+}
 
-    .hero-content {
+.hero-content {
   display: flex;
-  align-items: center;
-  gap: 35px;
+  align-items: stretch;
+  gap: 0;
+  min-height: 650px;
 }
 
 .hero-text {
   flex: 1;
+  min-width: 0;
+  padding: 70px 6%;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-photo {
-  width: 325px;
-  height: 325px;
+  width: 50%;
+  height: auto;
+  min-height: 650px;
   object-fit: cover;
-  border-radius: 50%;
+  object-position: center 30%;
+  border-radius: 0;
   flex-shrink: 0;
 }
 
     .hero h1 {
+      font-family: "Dancing Script", cursive;
       font-size: 52px;
       line-height: 1.15;
       margin-bottom: 15px;
-      color: #1f3a4d;
+      color: #ffffff;
     }
 
     .subtitle {
@@ -91,20 +102,23 @@
     .intro {
       max-width: 760px;
       font-size: 19px;
+      color: #ffffff;
     }
 
-    .button {
-      display: inline-block;
-      margin-top: 28px;
-      padding: 12px 22px;
-      border: 1px solid #1f3a4d;
-      color: #1f3a4d;
-      text-decoration: none;
-      border-radius: 4px;
-    }
+.button {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 28px;
+  padding: 12px 22px;
+  background: #0877bd;
+  border: 1px solid #0877bd;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0;
+}
 
     .button:hover {
-      background: #1f3a4d;
+     background: #065f99;
       color: white;
     }
 
@@ -229,7 +243,7 @@ color: inherit;
 <section class="hero">
   <div class="hero-content">
 <div class="hero-text">
-  <h1>Dr. Farzana Asim</h1>
+  <h1>Farzana Asim</h1>
 
 <div class="intro">
   <strong>Welcome. I’m glad you’re here.</strong>
