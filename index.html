@@ -75,17 +75,26 @@
   justify-content: center;
 }
 
-.hero-photo {
+.portrait-frame {
     width: 30%;
-    height: auto;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
-    object-position: center 30%;
     border-radius: 50%;
-    border: none;
+    overflow: hidden;
     flex-shrink: 0;
     align-self: center;
     margin: 0 10%;
+}
+
+.hero-photo {
+    display: block;
+    width: 120%;
+    height: 120%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center center;
+    border: none;
+    border-radius: 0;
+    transform: translate(-8%, -5%);
 }
 
 .hero h1 {
